@@ -21,7 +21,7 @@ ServicePrice int check(ServicePrice >= 0),
 CREATE TABLE Cats
 (
 CatID int primary key,
-AccountID int foreign key references Accounts(AccountID) on DELETE cascade,
+AccountID int foreign key references Accounts(AccountID),
 Breed varchar(30) not null,
 Color varchar(10) not null,
 Sex varchar(10) check (Sex like 'MEOW' OR Sex like 'FEMEOW'),
@@ -30,9 +30,9 @@ Sex varchar(10) check (Sex like 'MEOW' OR Sex like 'FEMEOW'),
 CREATE TABLE RegisteredServices
 (
 RegisteredID int primary key,
-AccountID int foreign key references Accounts(AccountID) on DELETE cascade,
-CatID int foreign key references Cats(CatID) on DELETE cascade,
-ServiceID int foreign key references Services(ServiceID) on DELETE cascade,
+AccountID int foreign key references Accounts(AccountID),
+CatID int foreign key references Cats(CatID),
+ServiceID int foreign key references Services(ServiceID),
 Date date,
 Status int check(Status = 0 OR Status = 1), --(0 = Not Done, 1 = Done)
 )

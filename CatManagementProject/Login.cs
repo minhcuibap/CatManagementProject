@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Services.Models;
+using Services.Services;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +14,35 @@ namespace CatManagementProject
 {
     public partial class Login : Form
     {
+        List<Account> accounts;
+        AccountHelper accountHelper = new AccountHelper();
         public Login()
         {
             InitializeComponent();
+
+            accounts = accountHelper.GetAll();
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            String username = txtUsername.Text;
+            String password = txtPassword.Text;
+
+            var check = accounts.Where(a => a.Username.Equals(username) &&
+                                            a.Password.Equals(password)).FirstOrDefault();
+
+            if (check != null)
+            {
+                this.Hide();
+
+                Form home = new Home();
+                home.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Invalid Username or Password", "Notification",
+                                MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

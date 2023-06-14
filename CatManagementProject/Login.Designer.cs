@@ -34,10 +34,10 @@
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            txtUsername = new TextBox();
+            txtPassword = new TextBox();
             panel2 = new Panel();
-            button1 = new Button();
+            btnLogin = new Button();
             pictureBox2 = new PictureBox();
             label4 = new Label();
             panel1.SuspendLayout();
@@ -96,19 +96,20 @@
             label3.TabIndex = 2;
             label3.Text = "Password";
             // 
-            // textBox1
+            // txtUsername
             // 
-            textBox1.Location = new Point(51, 205);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(227, 27);
-            textBox1.TabIndex = 3;
+            txtUsername.Location = new Point(51, 205);
+            txtUsername.Name = "txtUsername";
+            txtUsername.Size = new Size(227, 27);
+            txtUsername.TabIndex = 3;
             // 
-            // textBox2
+            // txtPassword
             // 
-            textBox2.Location = new Point(51, 293);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(227, 27);
-            textBox2.TabIndex = 4;
+            txtPassword.Location = new Point(51, 293);
+            txtPassword.Name = "txtPassword";
+            txtPassword.PasswordChar = '*';
+            txtPassword.Size = new Size(227, 27);
+            txtPassword.TabIndex = 4;
             // 
             // panel2
             // 
@@ -119,16 +120,17 @@
             panel2.Size = new Size(406, 26);
             panel2.TabIndex = 5;
             // 
-            // button1
+            // btnLogin
             // 
-            button1.BackColor = Color.LimeGreen;
-            button1.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(85, 350);
-            button1.Name = "button1";
-            button1.Size = new Size(143, 40);
-            button1.TabIndex = 6;
-            button1.Text = "Login";
-            button1.UseVisualStyleBackColor = false;
+            btnLogin.BackColor = Color.LimeGreen;
+            btnLogin.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnLogin.Location = new Point(85, 350);
+            btnLogin.Name = "btnLogin";
+            btnLogin.Size = new Size(143, 40);
+            btnLogin.TabIndex = 6;
+            btnLogin.Text = "Login";
+            btnLogin.UseVisualStyleBackColor = false;
+            btnLogin.Click += btnLogin_Click;
             // 
             // pictureBox2
             // 
@@ -157,10 +159,10 @@
             ClientSize = new Size(406, 509);
             Controls.Add(label4);
             Controls.Add(pictureBox2);
-            Controls.Add(button1);
+            Controls.Add(btnLogin);
             Controls.Add(panel2);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txtPassword);
+            Controls.Add(txtUsername);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(panel1);
@@ -182,10 +184,10 @@
         private Label label1;
         private Label label2;
         private Label label3;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox txtUsername;
+        private TextBox txtPassword;
         private Panel panel2;
-        private Button button1;
+        private Button btnLogin;
         private PictureBox pictureBox2;
         private Label label4;
     }

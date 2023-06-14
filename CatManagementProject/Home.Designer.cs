@@ -37,7 +37,7 @@
             panel4 = new Panel();
             button3 = new Button();
             panel5 = new Panel();
-            button4 = new Button();
+            btnLogOut = new Button();
             flowLayoutPanel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
@@ -125,22 +125,23 @@
             // 
             // panel5
             // 
-            panel5.Controls.Add(button4);
+            panel5.Controls.Add(btnLogOut);
             panel5.Location = new Point(3, 297);
             panel5.Name = "panel5";
             panel5.Size = new Size(204, 65);
             panel5.TabIndex = 4;
             // 
-            // button4
+            // btnLogOut
             // 
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
-            button4.Location = new Point(-21, -4);
-            button4.Name = "button4";
-            button4.Size = new Size(254, 74);
-            button4.TabIndex = 2;
-            button4.Text = "Log Out";
-            button4.UseVisualStyleBackColor = true;
+            btnLogOut.FlatStyle = FlatStyle.Flat;
+            btnLogOut.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            btnLogOut.Location = new Point(-21, -4);
+            btnLogOut.Name = "btnLogOut";
+            btnLogOut.Size = new Size(254, 74);
+            btnLogOut.TabIndex = 2;
+            btnLogOut.Text = "Log Out";
+            btnLogOut.UseVisualStyleBackColor = true;
+            btnLogOut.Click += btnLogOut_Click;
             // 
             // Home
             // 
@@ -170,6 +171,6 @@
         private Panel panel4;
         private Button button3;
         private Panel panel5;
-        private Button button4;
+        private Button btnLogOut;
     }
 }

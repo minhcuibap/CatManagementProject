@@ -28,12 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             pictureBox1 = new PictureBox();
             label1 = new Label();
             progressBar1 = new ProgressBar();
             label2 = new Label();
             label3 = new Label();
+            label4 = new Label();
+            timer1 = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -87,12 +90,26 @@
             label3.TabIndex = 4;
             label3.Text = "Loading";
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(454, 247);
+            label4.Name = "label4";
+            label4.Size = new Size(72, 23);
+            label4.TabIndex = 5;
+            label4.Text = "label4";
+            // 
+            // timer1
+            // 
+            timer1.Tick += timer1_Tick;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(12F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LimeGreen;
             ClientSize = new Size(602, 339);
+            Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(progressBar1);
@@ -104,6 +121,7 @@
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
+            Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -116,5 +134,7 @@
         private ProgressBar progressBar1;
         private Label label2;
         private Label label3;
+        private Label label4;
+        private System.Windows.Forms.Timer timer1;
     }
 }

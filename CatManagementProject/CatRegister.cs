@@ -41,6 +41,8 @@ namespace CatManagementProject
                 cat.Sex = sex;
                 cat.Color = color;
                 cat.Breed = breed;
+                CatHelper.Create(cat);
+
                 MessageBox.Show("Registered", "Notice", MessageBoxButtons.OK);
 
                 textAccountID.Text = string.Empty;

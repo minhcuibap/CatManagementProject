@@ -33,10 +33,21 @@ namespace CatManagementProject
 
             if (check != null)
             {
+
                 this.Hide();
 
-                Form home = new Home();
-                home.ShowDialog();
+                if (check.RoleId == 1)
+                {
+                    Form manager = new Manager();
+                    manager.ShowDialog();
+                }
+
+                if (check.RoleId == 2)
+                {
+                    Form home = new Home();
+                    home.ShowDialog();
+                }
+
             }
             else
             {

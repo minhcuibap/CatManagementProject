@@ -33,7 +33,6 @@
             pictureBox1 = new PictureBox();
             label1 = new Label();
             progressBar1 = new ProgressBar();
-            label2 = new Label();
             label3 = new Label();
             label4 = new Label();
             timer1 = new System.Windows.Forms.Timer(components);
@@ -68,17 +67,6 @@
             progressBar1.Size = new Size(405, 29);
             progressBar1.TabIndex = 2;
             // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Century Gothic", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.ForeColor = Color.Black;
-            label2.Location = new Point(255, 148);
-            label2.Name = "label2";
-            label2.Size = new Size(52, 27);
-            label2.TabIndex = 3;
-            label2.Text = "%%";
-            // 
             // label3
             // 
             label3.AutoSize = true;
@@ -111,7 +99,6 @@
             ClientSize = new Size(602, 339);
             Controls.Add(label4);
             Controls.Add(label3);
-            Controls.Add(label2);
             Controls.Add(progressBar1);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
@@ -132,7 +119,6 @@
         private PictureBox pictureBox1;
         private Label label1;
         private ProgressBar progressBar1;
-        private Label label2;
         private Label label3;
         private Label label4;
         private System.Windows.Forms.Timer timer1;

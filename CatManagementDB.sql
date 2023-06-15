@@ -40,7 +40,9 @@ Status int check(Status = 0 OR Status = 1), --(0 = Not Done, 1 = Done)
 
 -- INSERT DATA
 INSERT INTO Accounts(AccountID, Username, Password, Fullname, RoleID)
-VALUES(1, 'customer1', '123', 'minh1', 2),
+VALUES
+	  (1, 'customer1', '123', 'minh1', 2),
 	  (2, 'customer2', '123', 'minh2', 2),
 	  (3, 'customer3', '123', 'minh3', 2),
-	  (4, 'customer4', '123', 'minh4', 2)
+	  (4, 'customer4', '123', 'minh4', 2),
+	  (5, 'manager1', '345', 'hetcuu', 1)

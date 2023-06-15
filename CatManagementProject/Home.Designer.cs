@@ -56,7 +56,7 @@
             flowLayoutPanel1.Dock = DockStyle.Left;
             flowLayoutPanel1.Location = new Point(0, 0);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(207, 491);
+            flowLayoutPanel1.Size = new Size(207, 673);
             flowLayoutPanel1.TabIndex = 0;
             // 
             // panel1
@@ -147,7 +147,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(980, 491);
+            ClientSize = new Size(1262, 673);
             Controls.Add(flowLayoutPanel1);
             Name = "Home";
             StartPosition = FormStartPosition.CenterScreen;

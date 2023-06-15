@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\FPT\\Summer2023\\PRN211\\CatManagementProject\\CatManagementProject\\CatManagementProject.csproj": {}
+    "C:\\Users\\haoha\\source\\repos\\CatManagement\\CatManagementProject\\CatManagementProject.csproj": {}
   },
   "projects": {
-    "D:\\FPT\\Summer2023\\PRN211\\CatManagementProject\\CatManagementProject\\CatManagementProject.csproj": {
+    "C:\\Users\\haoha\\source\\repos\\CatManagement\\CatManagementProject\\CatManagementProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FPT\\Summer2023\\PRN211\\CatManagementProject\\CatManagementProject\\CatManagementProject.csproj",
+        "projectUniqueName": "C:\\Users\\haoha\\source\\repos\\CatManagement\\CatManagementProject\\CatManagementProject.csproj",
         "projectName": "CatManagementProject",
-        "projectPath": "D:\\FPT\\Summer2023\\PRN211\\CatManagementProject\\CatManagementProject\\CatManagementProject.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "D:\\FPT\\Summer2023\\PRN211\\CatManagementProject\\CatManagementProject\\obj\\",
+        "projectPath": "C:\\Users\\haoha\\source\\repos\\CatManagement\\CatManagementProject\\CatManagementProject.csproj",
+        "packagesPath": "C:\\Users\\haoha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\haoha\\source\\repos\\CatManagement\\CatManagementProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\haoha\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "D:\\FPT\\Summer2023\\PRN211\\CatManagementProject\\Services\\Services.csproj": {
-                "projectPath": "D:\\FPT\\Summer2023\\PRN211\\CatManagementProject\\Services\\Services.csproj"
+              "C:\\Users\\haoha\\source\\repos\\CatManagement\\Services\\Services.csproj": {
+                "projectPath": "C:\\Users\\haoha\\source\\repos\\CatManagement\\Services\\Services.csproj"
               }
             }
           }
@@ -66,17 +66,17 @@
         }
       }
     },
-    "D:\\FPT\\Summer2023\\PRN211\\CatManagementProject\\Services\\Services.csproj": {
+    "C:\\Users\\haoha\\source\\repos\\CatManagement\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FPT\\Summer2023\\PRN211\\CatManagementProject\\Services\\Services.csproj",
+        "projectUniqueName": "C:\\Users\\haoha\\source\\repos\\CatManagement\\Services\\Services.csproj",
         "projectName": "Services",
-        "projectPath": "D:\\FPT\\Summer2023\\PRN211\\CatManagementProject\\Services\\Services.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "D:\\FPT\\Summer2023\\PRN211\\CatManagementProject\\Services\\obj\\",
+        "projectPath": "C:\\Users\\haoha\\source\\repos\\CatManagement\\Services\\Services.csproj",
+        "packagesPath": "C:\\Users\\haoha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\haoha\\source\\repos\\CatManagement\\Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\haoha\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

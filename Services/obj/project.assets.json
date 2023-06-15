@@ -2630,19 +2630,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\DELL\\.nuget\\packages\\": {}
+    "C:\\Users\\haoha\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\FPT\\Summer2023\\PRN211\\CatManagementProject\\Services\\Services.csproj",
+      "projectUniqueName": "C:\\Users\\haoha\\source\\repos\\CatManagement\\Services\\Services.csproj",
       "projectName": "Services",
-      "projectPath": "D:\\FPT\\Summer2023\\PRN211\\CatManagementProject\\Services\\Services.csproj",
-      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "D:\\FPT\\Summer2023\\PRN211\\CatManagementProject\\Services\\obj\\",
+      "projectPath": "C:\\Users\\haoha\\source\\repos\\CatManagement\\Services\\Services.csproj",
+      "packagesPath": "C:\\Users\\haoha\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\haoha\\source\\repos\\CatManagement\\Services\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\haoha\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

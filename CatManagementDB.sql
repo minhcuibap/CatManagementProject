@@ -44,3 +44,27 @@ VALUES(1, 'customer1', '123', 'minh1', 2),
 	  (2, 'customer2', '123', 'minh2', 2),
 	  (3, 'customer3', '123', 'minh3', 2),
 	  (4, 'customer4', '123', 'minh4', 2)
+
+INSERT INTO Services(ServiceID, ServiceName, ServicePrice)
+VALUES	(1, 'Grooming', 100),
+		(2, 'Nursing', 50),
+		(3, 'Disease Check', 200),
+		(4, 'Feeding', 75),
+		(5, 'Identification', 20),
+		(6, 'Spaying and Neutering', 60),
+		(7, 'Vaccination', 300),
+		(8, 'Hygiene Care Pack', 200),
+		(9, 'Medical Examination Pack', 500),
+		(10, 'All in One Pack', 700)
+
+INSERT INTO Cats(CatID, AccountID, Breed, Color, Sex)
+VALUES	(1, 1, 'British Shorthair', 'Grey', 'MEOW'),
+		(2, 2, 'Lynx', 'Brown', 'FEMEOW'),
+		(3, 3, 'Idiot', 'Black', 'MEOW'),
+		(4, 3, 'Ragdoll', 'Grey', 'FEMEOW')
+
+INSERT INTO RegisteredServices(RegisteredID, AccountID, CatID, ServiceID, Date, Status)
+VALUES	(1, 1, 1, 1, GETDATE(), 1),
+		(2, 2, 2, 4, GETDATE(), 0),
+		(3, 3, 3, 10, GETDATE(), 0),
+		(4, 3, 4, 9, GETDATE(), 0)

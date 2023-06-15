@@ -12,3 +12,17 @@ D:\FPT\Summer2023\PRN211\CatManagementProject\Services\obj\Debug\net6.0\refint\S
 D:\FPT\Summer2023\PRN211\CatManagementProject\Services\obj\Debug\net6.0\Services.pdb
 D:\FPT\Summer2023\PRN211\CatManagementProject\Services\obj\Debug\net6.0\Services.genruntimeconfig.cache
 D:\FPT\Summer2023\PRN211\CatManagementProject\Services\obj\Debug\net6.0\ref\Services.dll
+E:\SUBJECTS\PRN211\1.1\Services\bin\Debug\net6.0\Services.deps.json
+E:\SUBJECTS\PRN211\1.1\Services\bin\Debug\net6.0\Services.runtimeconfig.json
+E:\SUBJECTS\PRN211\1.1\Services\bin\Debug\net6.0\Services.dll
+E:\SUBJECTS\PRN211\1.1\Services\bin\Debug\net6.0\Services.pdb
+E:\SUBJECTS\PRN211\1.1\Services\obj\Debug\net6.0\Services.csproj.AssemblyReference.cache
+E:\SUBJECTS\PRN211\1.1\Services\obj\Debug\net6.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+E:\SUBJECTS\PRN211\1.1\Services\obj\Debug\net6.0\Services.AssemblyInfoInputs.cache
+E:\SUBJECTS\PRN211\1.1\Services\obj\Debug\net6.0\Services.AssemblyInfo.cs
+E:\SUBJECTS\PRN211\1.1\Services\obj\Debug\net6.0\Services.csproj.CoreCompileInputs.cache
+E:\SUBJECTS\PRN211\1.1\Services\obj\Debug\net6.0\Services.dll
+E:\SUBJECTS\PRN211\1.1\Services\obj\Debug\net6.0\refint\Services.dll
+E:\SUBJECTS\PRN211\1.1\Services\obj\Debug\net6.0\Services.pdb
+E:\SUBJECTS\PRN211\1.1\Services\obj\Debug\net6.0\Services.genruntimeconfig.cache
+E:\SUBJECTS\PRN211\1.1\Services\obj\Debug\net6.0\ref\Services.dll

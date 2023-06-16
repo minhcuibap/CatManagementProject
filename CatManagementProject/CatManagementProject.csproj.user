@@ -13,5 +13,8 @@
     <Compile Update="Manager.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

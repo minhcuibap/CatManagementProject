@@ -39,7 +39,8 @@
             panel2 = new Panel();
             btnLogin = new Button();
             pictureBox2 = new PictureBox();
-            label4 = new Label();
+            linkLabel1 = new LinkLabel();
+            linkLabel2 = new LinkLabel();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -53,7 +54,7 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(406, 119);
+            panel1.Size = new Size(382, 119);
             panel1.TabIndex = 0;
             // 
             // pictureBox1
@@ -115,9 +116,9 @@
             // 
             panel2.BackColor = Color.LimeGreen;
             panel2.Dock = DockStyle.Bottom;
-            panel2.Location = new Point(0, 483);
+            panel2.Location = new Point(0, 487);
             panel2.Name = "panel2";
-            panel2.Size = new Size(406, 26);
+            panel2.Size = new Size(382, 26);
             panel2.TabIndex = 5;
             // 
             // btnLogin
@@ -142,22 +143,39 @@
             pictureBox2.TabIndex = 7;
             pictureBox2.TabStop = false;
             // 
-            // label4
+            // linkLabel1
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Century Gothic", 10.8F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
-            label4.Location = new Point(119, 406);
-            label4.Name = "label4";
-            label4.Size = new Size(57, 22);
-            label4.TabIndex = 8;
-            label4.Text = "Reset";
+            linkLabel1.AutoSize = true;
+            linkLabel1.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            linkLabel1.LinkColor = Color.Black;
+            linkLabel1.Location = new Point(52, 408);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(82, 25);
+            linkLabel1.TabIndex = 9;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "Register";
+            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
+            // 
+            // linkLabel2
+            // 
+            linkLabel2.AutoSize = true;
+            linkLabel2.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            linkLabel2.LinkColor = Color.Black;
+            linkLabel2.Location = new Point(192, 408);
+            linkLabel2.Name = "linkLabel2";
+            linkLabel2.Size = new Size(59, 25);
+            linkLabel2.TabIndex = 10;
+            linkLabel2.TabStop = true;
+            linkLabel2.Text = "Reset";
+            linkLabel2.LinkClicked += linkLabel2_LinkClicked;
             // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(406, 509);
-            Controls.Add(label4);
+            ClientSize = new Size(382, 513);
+            Controls.Add(linkLabel2);
+            Controls.Add(linkLabel1);
             Controls.Add(pictureBox2);
             Controls.Add(btnLogin);
             Controls.Add(panel2);
@@ -189,6 +207,7 @@
         private Panel panel2;
         private Button btnLogin;
         private PictureBox pictureBox2;
-        private Label label4;
+        private LinkLabel linkLabel1;
+        private LinkLabel linkLabel2;
     }
 }

@@ -55,5 +55,18 @@ namespace CatManagementProject
                                 MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            Registration registration = new Registration();
+            registration.Show();
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            txtUsername.Text = "";
+            txtPassword.Text = "";
+        }
     }
 }

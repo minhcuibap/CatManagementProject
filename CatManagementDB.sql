@@ -1,3 +1,5 @@
+DROP DATABASE BirdTradingPlatform
+
 CREATE DATABASE CatManagementDB
 
 USE CatManagementDB

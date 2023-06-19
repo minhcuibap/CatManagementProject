@@ -188,6 +188,7 @@
             Controls.Add(txtUsername);
             Controls.Add(pictureBox1);
             Name = "Registration";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Registration";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);

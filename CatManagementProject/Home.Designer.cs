@@ -30,6 +30,7 @@
         {
             flowLayoutPanel1 = new FlowLayoutPanel();
             panel1 = new Panel();
+            buttonReceipt = new Button();
             panel2 = new Panel();
             button1 = new Button();
             panel3 = new Panel();
@@ -38,7 +39,6 @@
             button3 = new Button();
             panel5 = new Panel();
             btnLogOut = new Button();
-            buttonReceipt = new Button();
             flowLayoutPanel1.SuspendLayout();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
@@ -69,6 +69,18 @@
             panel1.Size = new Size(204, 75);
             panel1.TabIndex = 1;
             // 
+            // buttonReceipt
+            // 
+            buttonReceipt.FlatStyle = FlatStyle.Flat;
+            buttonReceipt.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonReceipt.Location = new Point(-21, 9);
+            buttonReceipt.Name = "buttonReceipt";
+            buttonReceipt.Size = new Size(254, 74);
+            buttonReceipt.TabIndex = 3;
+            buttonReceipt.Text = "Receipt";
+            buttonReceipt.UseVisualStyleBackColor = true;
+            buttonReceipt.Click += button_Receipt;
+            // 
             // panel2
             // 
             panel2.Controls.Add(button1);
@@ -87,6 +99,7 @@
             button1.TabIndex = 2;
             button1.Text = "Home";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += buttonHome_click;
             // 
             // panel3
             // 
@@ -145,18 +158,6 @@
             btnLogOut.Text = "Log Out";
             btnLogOut.UseVisualStyleBackColor = true;
             btnLogOut.Click += btnLogOut_Click;
-            // 
-            // buttonReceipt
-            // 
-            buttonReceipt.FlatStyle = FlatStyle.Flat;
-            buttonReceipt.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonReceipt.Location = new Point(-21, 3);
-            buttonReceipt.Name = "buttonReceipt";
-            buttonReceipt.Size = new Size(254, 74);
-            buttonReceipt.TabIndex = 3;
-            buttonReceipt.Text = "Receipt";
-            buttonReceipt.UseVisualStyleBackColor = true;
-            buttonReceipt.Click += button_Receipt;
             // 
             // Home
             // 

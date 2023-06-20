@@ -20,6 +20,8 @@ namespace CatManagementProject
         {
             InitializeComponent();
             Username = username;
+
+
         }
         private void btnLogOut_Click(object sender, EventArgs e)
         {
@@ -36,10 +38,17 @@ namespace CatManagementProject
 
         private void button_Receipt(object sender, EventArgs e)
         {
-            string username = (Application.OpenForms["Login"] as Login)?.Username;
+            String username = Username;
             this.Hide();
             Form receipt = new Receipt(username);
             receipt.ShowDialog();
+        }
+
+        private void buttonHome_click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form home = new Home();
+            home.ShowDialog();
         }
     }
 }

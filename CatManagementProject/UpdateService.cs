@@ -28,7 +28,7 @@ namespace CatManagementProject
 
         private void initUpdateForm()
         {
-            txtID.Text = StaffDashboard.transferID.ToString();
+            txtID.Text = ServiceList.transferID.ToString();
         }
 
         private Boolean checkName(String name)
@@ -97,8 +97,8 @@ namespace CatManagementProject
                 txtErrorMsg.Text = "Updated Service Successfully";
                 await Task.Delay(TimeSpan.FromSeconds(3));
                 this.Hide();
-                Form staffDashboardForm = new StaffDashboard();
-                staffDashboardForm.ShowDialog();
+                Form serviceListForm = new ServiceList();
+                serviceListForm.ShowDialog();
                 this.Close();
             }
             catch (Exception ex)
@@ -130,8 +130,8 @@ namespace CatManagementProject
             }
             await Task.Delay(TimeSpan.FromSeconds(3));
             this.Hide();
-            Form staffDashboardForm = new StaffDashboard();
-            staffDashboardForm.ShowDialog();
+            Form serviceListForm = new ServiceList();
+            serviceListForm.ShowDialog();
             this.Close();
         }
     }

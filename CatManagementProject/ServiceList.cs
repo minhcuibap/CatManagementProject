@@ -12,30 +12,23 @@ using Services.Services;
 
 namespace CatManagementProject
 {
-    public partial class StaffDashboard : Form
+    public partial class ServiceList : Form
     {
         AccountHelper _accountHelper = new AccountHelper();
         CatHelper _catHelper = new CatHelper();
         RegisteredServiceHelper _registeredServiceHelper = new RegisteredServiceHelper();
         ServiceHelper _serviceHelper = new ServiceHelper();
-        public StaffDashboard()
+        public ServiceList()
         {
             InitializeComponent();
-            initRegisteredServiceList();
             initServiceList();
-        }
-
-        public void initRegisteredServiceList()
-        {
-            var listRegisteredService = _registeredServiceHelper.GetAll();
-            dgvRegisteredServiceList.DataSource = new BindingSource { DataSource = listRegisteredService };
         }
 
         public void initServiceList()
         {
             var listService = _serviceHelper.GetAll();
             dgvServiceList.DataSource = new BindingSource { DataSource = listService };
-            dgvServiceList.Columns["ServiceName"].Width = 320;
+            dgvServiceList.Columns["ServiceName"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
         }
 
         private void btnInitCreate_Click(object sender, EventArgs e)

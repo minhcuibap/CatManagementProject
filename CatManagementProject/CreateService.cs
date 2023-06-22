@@ -64,8 +64,8 @@ namespace CatManagementProject
                 txtErrorMsg.Text = "Created Service Successfully";
                 await Task.Delay(TimeSpan.FromSeconds(3));
                 this.Hide();
-                Form staffDashboardForm = new StaffDashboard();
-                staffDashboardForm.ShowDialog();
+                Form serviceListForm = new ServiceList();
+                serviceListForm.ShowDialog();
                 this.Close();
             }
             catch (Exception ex)

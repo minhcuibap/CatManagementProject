@@ -76,6 +76,7 @@
             btnServices.TabIndex = 3;
             btnServices.Text = "Services";
             btnServices.UseVisualStyleBackColor = true;
+            btnServices.Click += btnServices_Click;
             // 
             // btnCat
             // 

@@ -48,7 +48,14 @@
             btnCancel = new Button();
             txtStatus = new TextBox();
             label9 = new Label();
+            panel1 = new Panel();
+            btnLogOut = new Button();
+            btnServices = new Button();
+            btnCat = new Button();
+            btnManager = new Button();
+            panel2 = new Panel();
             ((System.ComponentModel.ISupportInitialize)dgvRegisteredServiceList).BeginInit();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // dgvRegisteredServiceList
@@ -57,7 +64,7 @@
             dgvRegisteredServiceList.AllowUserToResizeColumns = false;
             dgvRegisteredServiceList.AllowUserToResizeRows = false;
             dgvRegisteredServiceList.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvRegisteredServiceList.Location = new Point(12, 72);
+            dgvRegisteredServiceList.Location = new Point(256, 58);
             dgvRegisteredServiceList.Name = "dgvRegisteredServiceList";
             dgvRegisteredServiceList.ReadOnly = true;
             dgvRegisteredServiceList.RowHeadersWidth = 51;
@@ -71,7 +78,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(12, 23);
+            label1.Location = new Point(256, 9);
             label1.Name = "label1";
             label1.Size = new Size(367, 46);
             label1.TabIndex = 1;
@@ -80,7 +87,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(12, 397);
+            label2.Location = new Point(375, 397);
             label2.Name = "label2";
             label2.Size = new Size(91, 20);
             label2.TabIndex = 3;
@@ -89,7 +96,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(12, 476);
+            label3.Location = new Point(604, 466);
             label3.Name = "label3";
             label3.Size = new Size(116, 20);
             label3.TabIndex = 4;
@@ -97,7 +104,7 @@
             // 
             // txtAccountID
             // 
-            txtAccountID.Location = new Point(12, 420);
+            txtAccountID.Location = new Point(375, 420);
             txtAccountID.Name = "txtAccountID";
             txtAccountID.ReadOnly = true;
             txtAccountID.Size = new Size(150, 27);
@@ -105,7 +112,7 @@
             // 
             // txtAccountFullname
             // 
-            txtAccountFullname.Location = new Point(12, 499);
+            txtAccountFullname.Location = new Point(604, 499);
             txtAccountFullname.Name = "txtAccountFullname";
             txtAccountFullname.ReadOnly = true;
             txtAccountFullname.Size = new Size(150, 27);
@@ -113,7 +120,7 @@
             // 
             // txtRegisteredServiceID
             // 
-            txtRegisteredServiceID.Location = new Point(12, 345);
+            txtRegisteredServiceID.Location = new Point(375, 345);
             txtRegisteredServiceID.Name = "txtRegisteredServiceID";
             txtRegisteredServiceID.ReadOnly = true;
             txtRegisteredServiceID.Size = new Size(150, 27);
@@ -122,7 +129,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(12, 322);
+            label4.Location = new Point(375, 322);
             label4.Name = "label4";
             label4.Size = new Size(150, 20);
             label4.TabIndex = 7;
@@ -130,7 +137,7 @@
             // 
             // txtServiceID
             // 
-            txtServiceID.Location = new Point(229, 420);
+            txtServiceID.Location = new Point(604, 420);
             txtServiceID.Name = "txtServiceID";
             txtServiceID.ReadOnly = true;
             txtServiceID.Size = new Size(150, 27);
@@ -139,7 +146,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(229, 397);
+            label5.Location = new Point(604, 397);
             label5.Name = "label5";
             label5.Size = new Size(75, 20);
             label5.TabIndex = 9;
@@ -147,7 +154,7 @@
             // 
             // txtServiceName
             // 
-            txtServiceName.Location = new Point(229, 499);
+            txtServiceName.Location = new Point(799, 499);
             txtServiceName.Name = "txtServiceName";
             txtServiceName.ReadOnly = true;
             txtServiceName.Size = new Size(150, 27);
@@ -156,7 +163,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(229, 476);
+            label6.Location = new Point(799, 466);
             label6.Name = "label6";
             label6.Size = new Size(100, 20);
             label6.TabIndex = 11;
@@ -164,7 +171,7 @@
             // 
             // txtCatID
             // 
-            txtCatID.Location = new Point(229, 345);
+            txtCatID.Location = new Point(604, 345);
             txtCatID.Name = "txtCatID";
             txtCatID.ReadOnly = true;
             txtCatID.Size = new Size(150, 27);
@@ -173,7 +180,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(229, 322);
+            label7.Location = new Point(604, 322);
             label7.Name = "label7";
             label7.Size = new Size(50, 20);
             label7.TabIndex = 13;
@@ -181,7 +188,7 @@
             // 
             // txtDate
             // 
-            txtDate.Location = new Point(620, 345);
+            txtDate.Location = new Point(799, 345);
             txtDate.Name = "txtDate";
             txtDate.ReadOnly = true;
             txtDate.Size = new Size(150, 27);
@@ -190,7 +197,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(620, 322);
+            label8.Location = new Point(799, 322);
             label8.Name = "label8";
             label8.Size = new Size(86, 20);
             label8.TabIndex = 15;
@@ -200,7 +207,7 @@
             // 
             btnDone.BackColor = Color.White;
             btnDone.Enabled = false;
-            btnDone.Location = new Point(620, 476);
+            btnDone.Location = new Point(799, 552);
             btnDone.Name = "btnDone";
             btnDone.Size = new Size(150, 50);
             btnDone.TabIndex = 17;
@@ -213,7 +220,7 @@
             btnCancel.BackColor = Color.White;
             btnCancel.Enabled = false;
             btnCancel.ForeColor = Color.Black;
-            btnCancel.Location = new Point(455, 476);
+            btnCancel.Location = new Point(604, 552);
             btnCancel.Name = "btnCancel";
             btnCancel.Size = new Size(150, 50);
             btnCancel.TabIndex = 18;
@@ -223,7 +230,7 @@
             // 
             // txtStatus
             // 
-            txtStatus.Location = new Point(620, 420);
+            txtStatus.Location = new Point(799, 420);
             txtStatus.Name = "txtStatus";
             txtStatus.ReadOnly = true;
             txtStatus.Size = new Size(150, 27);
@@ -232,17 +239,90 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(620, 397);
+            label9.Location = new Point(799, 397);
             label9.Name = "label9";
             label9.Size = new Size(49, 20);
             label9.TabIndex = 19;
             label9.Text = "Status";
             // 
+            // panel1
+            // 
+            panel1.BackColor = Color.LimeGreen;
+            panel1.Controls.Add(btnLogOut);
+            panel1.Controls.Add(btnServices);
+            panel1.Controls.Add(btnCat);
+            panel1.Controls.Add(btnManager);
+            panel1.Controls.Add(panel2);
+            panel1.Dock = DockStyle.Left;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(250, 673);
+            panel1.TabIndex = 21;
+            // 
+            // btnLogOut
+            // 
+            btnLogOut.FlatAppearance.BorderSize = 0;
+            btnLogOut.FlatStyle = FlatStyle.Flat;
+            btnLogOut.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            btnLogOut.Location = new Point(0, 382);
+            btnLogOut.Name = "btnLogOut";
+            btnLogOut.Size = new Size(250, 79);
+            btnLogOut.TabIndex = 4;
+            btnLogOut.Text = "Log Out";
+            btnLogOut.UseVisualStyleBackColor = true;
+            btnLogOut.Click += btnLogOut_Click;
+            // 
+            // btnServices
+            // 
+            btnServices.FlatAppearance.BorderSize = 0;
+            btnServices.FlatStyle = FlatStyle.Flat;
+            btnServices.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            btnServices.Location = new Point(0, 297);
+            btnServices.Name = "btnServices";
+            btnServices.Size = new Size(250, 79);
+            btnServices.TabIndex = 3;
+            btnServices.Text = "Services";
+            btnServices.UseVisualStyleBackColor = true;
+            btnServices.Click += btnServices_Click;
+            // 
+            // btnCat
+            // 
+            btnCat.FlatAppearance.BorderSize = 0;
+            btnCat.FlatStyle = FlatStyle.Flat;
+            btnCat.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            btnCat.Location = new Point(0, 210);
+            btnCat.Name = "btnCat";
+            btnCat.Size = new Size(250, 79);
+            btnCat.TabIndex = 2;
+            btnCat.Text = "Cat";
+            btnCat.UseVisualStyleBackColor = true;
+            // 
+            // btnManager
+            // 
+            btnManager.FlatAppearance.BorderSize = 0;
+            btnManager.FlatStyle = FlatStyle.Flat;
+            btnManager.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            btnManager.Location = new Point(0, 125);
+            btnManager.Name = "btnManager";
+            btnManager.Size = new Size(250, 79);
+            btnManager.TabIndex = 1;
+            btnManager.Text = "Manager";
+            btnManager.UseVisualStyleBackColor = true;
+            btnManager.Click += btnManager_Click;
+            // 
+            // panel2
+            // 
+            panel2.Location = new Point(3, 3);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(247, 125);
+            panel2.TabIndex = 0;
+            // 
             // RegisteredServiceList
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(782, 553);
+            ClientSize = new Size(1262, 673);
+            Controls.Add(panel1);
             Controls.Add(txtStatus);
             Controls.Add(label9);
             Controls.Add(btnCancel);
@@ -266,6 +346,7 @@
             Name = "RegisteredServiceList";
             Text = "RegisteredServiceList";
             ((System.ComponentModel.ISupportInitialize)dgvRegisteredServiceList).EndInit();
+            panel1.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -292,5 +373,11 @@
         private Button btnCancel;
         private TextBox txtStatus;
         private Label label9;
+        private Panel panel1;
+        private Button btnLogOut;
+        private Button btnServices;
+        private Button btnCat;
+        private Button btnManager;
+        private Panel panel2;
     }
 }

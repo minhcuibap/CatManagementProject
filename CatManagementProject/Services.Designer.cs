@@ -1,6 +1,6 @@
 ﻿namespace CatManagementProject
 {
-    partial class CreateService
+    partial class Services
     {
         /// <summary>
         /// Required designer variable.
@@ -28,102 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            txtID = new TextBox();
-            txtName = new TextBox();
-            txtPrice = new TextBox();
-            btnCreate = new Button();
-            txtErrorMsg = new Label();
+            components = new System.ComponentModel.Container();
             panel1 = new Panel();
             btnLogOut = new Button();
             btnServices = new Button();
             btnCat = new Button();
             btnManager = new Button();
             panel2 = new Panel();
+            contextMenuStrip1 = new ContextMenuStrip(components);
+            button1 = new Button();
+            button2 = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(385, 132);
-            label1.Name = "label1";
-            label1.Size = new Size(24, 20);
-            label1.TabIndex = 0;
-            label1.Text = "ID";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(372, 210);
-            label2.Name = "label2";
-            label2.Size = new Size(49, 20);
-            label2.TabIndex = 1;
-            label2.Text = "Name";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(372, 278);
-            label3.Name = "label3";
-            label3.Size = new Size(41, 20);
-            label3.TabIndex = 2;
-            label3.Text = "Price";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(445, 34);
-            label4.Name = "label4";
-            label4.Size = new Size(310, 46);
-            label4.TabIndex = 3;
-            label4.Text = "Create New Service";
-            // 
-            // txtID
-            // 
-            txtID.Enabled = false;
-            txtID.Location = new Point(427, 125);
-            txtID.Name = "txtID";
-            txtID.Size = new Size(430, 27);
-            txtID.TabIndex = 4;
-            // 
-            // txtName
-            // 
-            txtName.Location = new Point(427, 207);
-            txtName.Name = "txtName";
-            txtName.Size = new Size(430, 27);
-            txtName.TabIndex = 5;
-            // 
-            // txtPrice
-            // 
-            txtPrice.Location = new Point(427, 271);
-            txtPrice.Name = "txtPrice";
-            txtPrice.Size = new Size(430, 27);
-            txtPrice.TabIndex = 6;
-            // 
-            // btnCreate
-            // 
-            btnCreate.Location = new Point(743, 333);
-            btnCreate.Name = "btnCreate";
-            btnCreate.Size = new Size(94, 29);
-            btnCreate.TabIndex = 7;
-            btnCreate.Text = "Create";
-            btnCreate.UseVisualStyleBackColor = true;
-            btnCreate.Click += btnCreate_Click;
-            // 
-            // txtErrorMsg
-            // 
-            txtErrorMsg.AutoSize = true;
-            txtErrorMsg.ForeColor = Color.Red;
-            txtErrorMsg.Location = new Point(445, 333);
-            txtErrorMsg.Name = "txtErrorMsg";
-            txtErrorMsg.Size = new Size(41, 20);
-            txtErrorMsg.TabIndex = 8;
-            txtErrorMsg.Text = "error";
             // 
             // panel1
             // 
@@ -137,7 +53,7 @@
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(250, 673);
-            panel1.TabIndex = 9;
+            panel1.TabIndex = 1;
             // 
             // btnLogOut
             // 
@@ -197,44 +113,57 @@
             panel2.Size = new Size(247, 125);
             panel2.TabIndex = 0;
             // 
-            // CreateService
+            // contextMenuStrip1
+            // 
+            contextMenuStrip1.ImageScalingSize = new Size(20, 20);
+            contextMenuStrip1.Name = "contextMenuStrip1";
+            contextMenuStrip1.Size = new Size(61, 4);
+            // 
+            // button1
+            // 
+            button1.Location = new Point(362, 226);
+            button1.Name = "button1";
+            button1.Size = new Size(157, 84);
+            button1.TabIndex = 3;
+            button1.Text = "Show Services List";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(687, 226);
+            button2.Name = "button2";
+            button2.Size = new Size(157, 84);
+            button2.TabIndex = 4;
+            button2.Text = "Show Registered Services List";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // Services
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1262, 673);
+            Controls.Add(button2);
+            Controls.Add(button1);
             Controls.Add(panel1);
-            Controls.Add(txtErrorMsg);
-            Controls.Add(btnCreate);
-            Controls.Add(txtPrice);
-            Controls.Add(txtName);
-            Controls.Add(txtID);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Name = "CreateService";
-            Text = "CreateService";
+            Name = "Services";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Services";
             panel1.ResumeLayout(false);
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
-        private Label label1;
-        private Label label2;
-        private Label label3;
-        private Label label4;
-        private TextBox txtID;
-        private TextBox txtName;
-        private TextBox txtPrice;
-        private Button btnCreate;
-        private Label txtErrorMsg;
         private Panel panel1;
         private Button btnLogOut;
         private Button btnServices;
         private Button btnCat;
         private Button btnManager;
         private Panel panel2;
+        private ContextMenuStrip contextMenuStrip1;
+        private Button button1;
+        private Button button2;
     }
 }

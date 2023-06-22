@@ -29,5 +29,12 @@ namespace CatManagementProject
                 login.ShowDialog();
             }
         }
+
+        private void btnServices_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form services = new Services();
+            services.ShowDialog();
+        }
     }
 }

@@ -38,12 +38,19 @@
             btnUpdate = new Button();
             btnDelete = new Button();
             txtErrorMsg = new Label();
+            panel1 = new Panel();
+            btnLogOut = new Button();
+            btnServices = new Button();
+            btnCat = new Button();
+            btnManager = new Button();
+            panel2 = new Panel();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(133, 144);
+            label1.Location = new Point(401, 144);
             label1.Name = "label1";
             label1.Size = new Size(24, 20);
             label1.TabIndex = 0;
@@ -52,7 +59,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(133, 210);
+            label2.Location = new Point(393, 210);
             label2.Name = "label2";
             label2.Size = new Size(49, 20);
             label2.TabIndex = 1;
@@ -61,7 +68,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(133, 277);
+            label3.Location = new Point(393, 284);
             label3.Name = "label3";
             label3.Size = new Size(41, 20);
             label3.TabIndex = 2;
@@ -71,7 +78,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(276, 41);
+            label4.Location = new Point(510, 32);
             label4.Name = "label4";
             label4.Size = new Size(245, 46);
             label4.TabIndex = 3;
@@ -79,7 +86,7 @@
             // 
             // txtID
             // 
-            txtID.Location = new Point(251, 141);
+            txtID.Location = new Point(448, 137);
             txtID.Name = "txtID";
             txtID.ReadOnly = true;
             txtID.Size = new Size(411, 27);
@@ -87,21 +94,21 @@
             // 
             // txtName
             // 
-            txtName.Location = new Point(251, 207);
+            txtName.Location = new Point(448, 203);
             txtName.Name = "txtName";
             txtName.Size = new Size(411, 27);
             txtName.TabIndex = 5;
             // 
             // txtPrice
             // 
-            txtPrice.Location = new Point(251, 274);
+            txtPrice.Location = new Point(448, 277);
             txtPrice.Name = "txtPrice";
             txtPrice.Size = new Size(411, 27);
             txtPrice.TabIndex = 6;
             // 
             // btnUpdate
             // 
-            btnUpdate.Location = new Point(568, 339);
+            btnUpdate.Location = new Point(765, 363);
             btnUpdate.Name = "btnUpdate";
             btnUpdate.Size = new Size(94, 29);
             btnUpdate.TabIndex = 7;
@@ -113,7 +120,7 @@
             // 
             btnDelete.BackColor = Color.Red;
             btnDelete.ForeColor = Color.White;
-            btnDelete.Location = new Point(251, 339);
+            btnDelete.Location = new Point(448, 363);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(94, 29);
             btnDelete.TabIndex = 8;
@@ -125,17 +132,90 @@
             // 
             txtErrorMsg.AutoSize = true;
             txtErrorMsg.ForeColor = Color.Red;
-            txtErrorMsg.Location = new Point(251, 391);
+            txtErrorMsg.Location = new Point(460, 328);
             txtErrorMsg.Name = "txtErrorMsg";
             txtErrorMsg.Size = new Size(41, 20);
             txtErrorMsg.TabIndex = 9;
             txtErrorMsg.Text = "error";
             // 
+            // panel1
+            // 
+            panel1.BackColor = Color.LimeGreen;
+            panel1.Controls.Add(btnLogOut);
+            panel1.Controls.Add(btnServices);
+            panel1.Controls.Add(btnCat);
+            panel1.Controls.Add(btnManager);
+            panel1.Controls.Add(panel2);
+            panel1.Dock = DockStyle.Left;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(250, 673);
+            panel1.TabIndex = 10;
+            // 
+            // btnLogOut
+            // 
+            btnLogOut.FlatAppearance.BorderSize = 0;
+            btnLogOut.FlatStyle = FlatStyle.Flat;
+            btnLogOut.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            btnLogOut.Location = new Point(0, 382);
+            btnLogOut.Name = "btnLogOut";
+            btnLogOut.Size = new Size(250, 79);
+            btnLogOut.TabIndex = 4;
+            btnLogOut.Text = "Log Out";
+            btnLogOut.UseVisualStyleBackColor = true;
+            btnLogOut.Click += btnLogOut_Click;
+            // 
+            // btnServices
+            // 
+            btnServices.FlatAppearance.BorderSize = 0;
+            btnServices.FlatStyle = FlatStyle.Flat;
+            btnServices.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            btnServices.Location = new Point(0, 297);
+            btnServices.Name = "btnServices";
+            btnServices.Size = new Size(250, 79);
+            btnServices.TabIndex = 3;
+            btnServices.Text = "Services";
+            btnServices.UseVisualStyleBackColor = true;
+            btnServices.Click += btnServices_Click;
+            // 
+            // btnCat
+            // 
+            btnCat.FlatAppearance.BorderSize = 0;
+            btnCat.FlatStyle = FlatStyle.Flat;
+            btnCat.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            btnCat.Location = new Point(0, 210);
+            btnCat.Name = "btnCat";
+            btnCat.Size = new Size(250, 79);
+            btnCat.TabIndex = 2;
+            btnCat.Text = "Cat";
+            btnCat.UseVisualStyleBackColor = true;
+            // 
+            // btnManager
+            // 
+            btnManager.FlatAppearance.BorderSize = 0;
+            btnManager.FlatStyle = FlatStyle.Flat;
+            btnManager.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            btnManager.Location = new Point(0, 125);
+            btnManager.Name = "btnManager";
+            btnManager.Size = new Size(250, 79);
+            btnManager.TabIndex = 1;
+            btnManager.Text = "Manager";
+            btnManager.UseVisualStyleBackColor = true;
+            btnManager.Click += btnManager_Click;
+            // 
+            // panel2
+            // 
+            panel2.Location = new Point(3, 3);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(247, 125);
+            panel2.TabIndex = 0;
+            // 
             // UpdateService
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1262, 673);
+            Controls.Add(panel1);
             Controls.Add(txtErrorMsg);
             Controls.Add(btnDelete);
             Controls.Add(btnUpdate);
@@ -148,6 +228,7 @@
             Controls.Add(label1);
             Name = "UpdateService";
             Text = "UpdateService";
+            panel1.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -164,5 +245,11 @@
         private Button btnUpdate;
         private Button btnDelete;
         private Label txtErrorMsg;
+        private Panel panel1;
+        private Button btnLogOut;
+        private Button btnServices;
+        private Button btnCat;
+        private Button btnManager;
+        private Panel panel2;
     }
 }

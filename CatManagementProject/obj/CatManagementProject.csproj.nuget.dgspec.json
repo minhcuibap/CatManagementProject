@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\FPT\\Summer2023\\PRN211\\CatManagementProject\\CatManagementProject\\CatManagementProject.csproj": {}
+    "E:\\SUBJECTS\\PRN211\\1.1\\CatManagementProject\\CatManagementProject.csproj": {}
   },
   "projects": {
-    "D:\\FPT\\Summer2023\\PRN211\\CatManagementProject\\CatManagementProject\\CatManagementProject.csproj": {
+    "E:\\SUBJECTS\\PRN211\\1.1\\CatManagementProject\\CatManagementProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FPT\\Summer2023\\PRN211\\CatManagementProject\\CatManagementProject\\CatManagementProject.csproj",
+        "projectUniqueName": "E:\\SUBJECTS\\PRN211\\1.1\\CatManagementProject\\CatManagementProject.csproj",
         "projectName": "CatManagementProject",
-        "projectPath": "D:\\FPT\\Summer2023\\PRN211\\CatManagementProject\\CatManagementProject\\CatManagementProject.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "D:\\FPT\\Summer2023\\PRN211\\CatManagementProject\\CatManagementProject\\obj\\",
+        "projectPath": "E:\\SUBJECTS\\PRN211\\1.1\\CatManagementProject\\CatManagementProject.csproj",
+        "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
+        "outputPath": "E:\\SUBJECTS\\PRN211\\1.1\\CatManagementProject\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "E:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,14 +26,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "D:\\FPT\\Summer2023\\PRN211\\CatManagementProject\\Services\\Services.csproj": {
-                "projectPath": "D:\\FPT\\Summer2023\\PRN211\\CatManagementProject\\Services\\Services.csproj"
+              "E:\\SUBJECTS\\PRN211\\1.1\\Services\\Services.csproj": {
+                "projectPath": "E:\\SUBJECTS\\PRN211\\1.1\\Services\\Services.csproj"
               }
             }
           }
@@ -66,17 +71,21 @@
         }
       }
     },
-    "D:\\FPT\\Summer2023\\PRN211\\CatManagementProject\\Services\\Services.csproj": {
+    "E:\\SUBJECTS\\PRN211\\1.1\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FPT\\Summer2023\\PRN211\\CatManagementProject\\Services\\Services.csproj",
+        "projectUniqueName": "E:\\SUBJECTS\\PRN211\\1.1\\Services\\Services.csproj",
         "projectName": "Services",
-        "projectPath": "D:\\FPT\\Summer2023\\PRN211\\CatManagementProject\\Services\\Services.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "D:\\FPT\\Summer2023\\PRN211\\CatManagementProject\\Services\\obj\\",
+        "projectPath": "E:\\SUBJECTS\\PRN211\\1.1\\Services\\Services.csproj",
+        "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
+        "outputPath": "E:\\SUBJECTS\\PRN211\\1.1\\Services\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "E:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -84,6 +93,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

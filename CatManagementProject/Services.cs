@@ -71,5 +71,12 @@ namespace CatManagementProject
             Form updateService = new UpdateService();
             updateService.ShowDialog();
         }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form accountmanager = new AccountManager();
+            accountmanager.ShowDialog();
+        }
     }
 }

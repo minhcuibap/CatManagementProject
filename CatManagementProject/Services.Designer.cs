@@ -38,6 +38,7 @@
             contextMenuStrip1 = new ContextMenuStrip(components);
             button1 = new Button();
             button2 = new Button();
+            button3 = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -139,11 +140,22 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
+            // button3
+            // 
+            button3.Location = new Point(1001, 226);
+            button3.Name = "button3";
+            button3.Size = new Size(157, 84);
+            button3.TabIndex = 5;
+            button3.Text = "Account Management";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click_1;
+            // 
             // Services
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1262, 673);
+            Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(panel1);
@@ -165,5 +177,6 @@
         private ContextMenuStrip contextMenuStrip1;
         private Button button1;
         private Button button2;
+        private Button button3;
     }
 }

@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Compile Update="CreateService.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -10,10 +13,20 @@
     <Compile Update="Login.cs">
       <SubType>Form</SubType>
     </Compile>
+<<<<<<< HEAD
     <Compile Update="Manager.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Registration.cs">
+=======
+    <Compile Update="RegisteredServiceList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ServiceList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UpdateService.cs">
+>>>>>>> 207e6817edb3b5562ac9eb0659812a160cf9ae59
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

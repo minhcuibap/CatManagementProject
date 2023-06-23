@@ -115,20 +115,20 @@ namespace Services.Models
 
                 entity.Property(e => e.ServiceId).HasColumnName("ServiceID");
 
-                entity.HasOne(d => d.Account)
-                    .WithMany(p => p.RegisteredServices)
-                    .HasForeignKey(d => d.AccountId)
-                    .HasConstraintName("FK__Registere__Accou__403A8C7D");
+                // entity.HasOne(d => d.Account)
+                //     .WithMany(p => p.RegisteredServices)
+                //     .HasForeignKey(d => d.AccountId)
+                //     .HasConstraintName("FK__Registere__Accou__403A8C7D");
 
-                entity.HasOne(d => d.Cat)
-                    .WithMany(p => p.RegisteredServices)
-                    .HasForeignKey(d => d.CatId)
-                    .HasConstraintName("FK__Registere__CatID__412EB0B6");
+                // entity.HasOne(d => d.Cat)
+                //     .WithMany(p => p.RegisteredServices)
+                //     .HasForeignKey(d => d.CatId)
+                //     .HasConstraintName("FK__Registere__CatID__412EB0B6");
 
-                entity.HasOne(d => d.Service)
-                    .WithMany(p => p.RegisteredServices)
-                    .HasForeignKey(d => d.ServiceId)
-                    .HasConstraintName("FK__Registere__Servi__4222D4EF");
+                // entity.HasOne(d => d.Service)
+                //     .WithMany(p => p.RegisteredServices)
+                //     .HasForeignKey(d => d.ServiceId)
+                //     .HasConstraintName("FK__Registere__Servi__4222D4EF");
             });
 
             modelBuilder.Entity<Service>(entity =>

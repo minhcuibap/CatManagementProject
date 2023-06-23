@@ -14,6 +14,7 @@ namespace CatManagementProject
 {
     public partial class Login : Form
     {
+        public string Username { get; private set; }
         List<Account> accounts;
         AccountHelper accountHelper = new AccountHelper();
         public Login()
@@ -33,40 +34,16 @@ namespace CatManagementProject
 
             if (check != null)
             {
-
                 this.Hide();
 
-                if (check.RoleId == 1)
-                {
-                    Form manager = new Manager();
-                    manager.ShowDialog();
-                }
-
-                if (check.RoleId == 2)
-                {
-                    Form home = new Home();
-                    home.ShowDialog();
-                }
-
+                Form home = new Home(username);
+                home.ShowDialog();
             }
             else
             {
                 MessageBox.Show("Invalid Username or Password", "Notification",
                                 MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            this.Hide();
-            Registration registration = new Registration();
-            registration.Show();
-        }
-
-        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            txtUsername.Text = "";
-            txtPassword.Text = "";
         }
     }
 }

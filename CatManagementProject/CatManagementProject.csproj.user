@@ -20,6 +20,9 @@
     <Compile Update="Manager.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Receipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="RegisteredServiceList.cs">
       <SubType>Form</SubType>
     </Compile>

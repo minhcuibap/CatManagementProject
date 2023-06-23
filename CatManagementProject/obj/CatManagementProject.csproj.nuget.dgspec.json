@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PC FPT\\Desktop\\Fpt\\Term 5\\PRN211\\CatManagement\\CatManagementProject\\CatManagementProject.csproj": {}
+    "C:\\Users\\ACER\\Desktop\\FPT\\SUMMER23\\pe ro no\\CatManagement\\CatManagementProject-main\\CatManagementProject\\CatManagementProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PC FPT\\Desktop\\Fpt\\Term 5\\PRN211\\CatManagement\\CatManagementProject\\CatManagementProject.csproj": {
+    "C:\\Users\\ACER\\Desktop\\FPT\\SUMMER23\\pe ro no\\CatManagement\\CatManagementProject-main\\CatManagementProject\\CatManagementProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PC FPT\\Desktop\\Fpt\\Term 5\\PRN211\\CatManagement\\CatManagementProject\\CatManagementProject.csproj",
+        "projectUniqueName": "C:\\Users\\ACER\\Desktop\\FPT\\SUMMER23\\pe ro no\\CatManagement\\CatManagementProject-main\\CatManagementProject\\CatManagementProject.csproj",
         "projectName": "CatManagementProject",
-        "projectPath": "C:\\Users\\PC FPT\\Desktop\\Fpt\\Term 5\\PRN211\\CatManagement\\CatManagementProject\\CatManagementProject.csproj",
-        "packagesPath": "C:\\Users\\PC FPT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PC FPT\\Desktop\\Fpt\\Term 5\\PRN211\\CatManagement\\CatManagementProject\\obj\\",
+        "projectPath": "C:\\Users\\ACER\\Desktop\\FPT\\SUMMER23\\pe ro no\\CatManagement\\CatManagementProject-main\\CatManagementProject\\CatManagementProject.csproj",
+        "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ACER\\Desktop\\FPT\\SUMMER23\\pe ro no\\CatManagement\\CatManagementProject-main\\CatManagementProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\PC FPT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "C:\\Users\\PC FPT\\Desktop\\Fpt\\Term 5\\PRN211\\CatManagement\\Services\\Services.csproj": {
-                "projectPath": "C:\\Users\\PC FPT\\Desktop\\Fpt\\Term 5\\PRN211\\CatManagement\\Services\\Services.csproj"
+              "C:\\Users\\ACER\\Desktop\\FPT\\SUMMER23\\pe ro no\\CatManagement\\CatManagementProject-main\\Services\\Services.csproj": {
+                "projectPath": "C:\\Users\\ACER\\Desktop\\FPT\\SUMMER23\\pe ro no\\CatManagement\\CatManagementProject-main\\Services\\Services.csproj"
               }
             }
           }
@@ -62,21 +62,21 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\PC FPT\\Desktop\\Fpt\\Term 5\\PRN211\\CatManagement\\Services\\Services.csproj": {
+    "C:\\Users\\ACER\\Desktop\\FPT\\SUMMER23\\pe ro no\\CatManagement\\CatManagementProject-main\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PC FPT\\Desktop\\Fpt\\Term 5\\PRN211\\CatManagement\\Services\\Services.csproj",
+        "projectUniqueName": "C:\\Users\\ACER\\Desktop\\FPT\\SUMMER23\\pe ro no\\CatManagement\\CatManagementProject-main\\Services\\Services.csproj",
         "projectName": "Services",
-        "projectPath": "C:\\Users\\PC FPT\\Desktop\\Fpt\\Term 5\\PRN211\\CatManagement\\Services\\Services.csproj",
-        "packagesPath": "C:\\Users\\PC FPT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PC FPT\\Desktop\\Fpt\\Term 5\\PRN211\\CatManagement\\Services\\obj\\",
+        "projectPath": "C:\\Users\\ACER\\Desktop\\FPT\\SUMMER23\\pe ro no\\CatManagement\\CatManagementProject-main\\Services\\Services.csproj",
+        "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ACER\\Desktop\\FPT\\SUMMER23\\pe ro no\\CatManagement\\CatManagementProject-main\\Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\PC FPT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -147,7 +147,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

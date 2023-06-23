@@ -30,6 +30,10 @@
         {
             flowLayoutPanel1 = new FlowLayoutPanel();
             panel1 = new Panel();
+<<<<<<< HEAD
+            buttonReceipt = new Button();
+=======
+>>>>>>> 7539cf1 (Added Receipt form)
             panel2 = new Panel();
             button1 = new Button();
             panel3 = new Panel();
@@ -38,8 +42,12 @@
             button3 = new Button();
             panel5 = new Panel();
             btnLogOut = new Button();
-            sqlCommandBuilder1 = new Microsoft.Data.SqlClient.SqlCommandBuilder();
+<<<<<<< HEAD
+=======
+            buttonReceipt = new Button();
+>>>>>>> 7539cf1 (Added Receipt form)
             flowLayoutPanel1.SuspendLayout();
+            panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
             panel4.SuspendLayout();
@@ -57,16 +65,32 @@
             flowLayoutPanel1.Dock = DockStyle.Left;
             flowLayoutPanel1.Location = new Point(0, 0);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(207, 673);
+            flowLayoutPanel1.Size = new Size(207, 491);
             flowLayoutPanel1.TabIndex = 0;
             // 
             // panel1
             // 
+            panel1.Controls.Add(buttonReceipt);
             panel1.Location = new Point(3, 3);
             panel1.Name = "panel1";
             panel1.Size = new Size(204, 75);
             panel1.TabIndex = 1;
             // 
+<<<<<<< HEAD
+            // buttonReceipt
+            // 
+            buttonReceipt.FlatStyle = FlatStyle.Flat;
+            buttonReceipt.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonReceipt.Location = new Point(-21, 9);
+            buttonReceipt.Name = "buttonReceipt";
+            buttonReceipt.Size = new Size(254, 74);
+            buttonReceipt.TabIndex = 3;
+            buttonReceipt.Text = "Receipt";
+            buttonReceipt.UseVisualStyleBackColor = true;
+            buttonReceipt.Click += button_Receipt;
+            // 
+=======
+>>>>>>> 7539cf1 (Added Receipt form)
             // panel2
             // 
             panel2.Controls.Add(button1);
@@ -85,6 +109,10 @@
             button1.TabIndex = 2;
             button1.Text = "Home";
             button1.UseVisualStyleBackColor = true;
+<<<<<<< HEAD
+            button1.Click += buttonHome_click;
+=======
+>>>>>>> 7539cf1 (Added Receipt form)
             // 
             // panel3
             // 
@@ -144,22 +172,32 @@
             btnLogOut.UseVisualStyleBackColor = true;
             btnLogOut.Click += btnLogOut_Click;
             // 
-            // sqlCommandBuilder1
+<<<<<<< HEAD
+=======
+            // buttonReceipt
             // 
-            sqlCommandBuilder1.DataAdapter = null;
-            sqlCommandBuilder1.QuotePrefix = "[";
-            sqlCommandBuilder1.QuoteSuffix = "]";
+            buttonReceipt.FlatStyle = FlatStyle.Flat;
+            buttonReceipt.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonReceipt.Location = new Point(-21, 3);
+            buttonReceipt.Name = "buttonReceipt";
+            buttonReceipt.Size = new Size(254, 74);
+            buttonReceipt.TabIndex = 3;
+            buttonReceipt.Text = "Receipt";
+            buttonReceipt.UseVisualStyleBackColor = true;
+            buttonReceipt.Click += button_Receipt;
             // 
+>>>>>>> 7539cf1 (Added Receipt form)
             // Home
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1262, 673);
+            ClientSize = new Size(980, 491);
             Controls.Add(flowLayoutPanel1);
             Name = "Home";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Home";
             flowLayoutPanel1.ResumeLayout(false);
+            panel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
             panel3.ResumeLayout(false);
             panel4.ResumeLayout(false);
@@ -179,6 +217,6 @@
         private Button button3;
         private Panel panel5;
         private Button btnLogOut;
-        private Microsoft.Data.SqlClient.SqlCommandBuilder sqlCommandBuilder1;
+        private Button buttonReceipt;
     }
 }

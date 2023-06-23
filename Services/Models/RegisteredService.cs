@@ -14,8 +14,10 @@ namespace Services.Models
         public DateTime? Date { get; set; }
         public int? Status { get; set; }
 
-        //public virtual Account Account { get; set; }
-        //public virtual Cat Cat { get; set; }
-        //public virtual Service Service { get; set; }
+        // public virtual Account Account { get; set; }
+        // public virtual Cat Cat { get; set; }
+        // public virtual Service Service { get; set; }
+
+        
     }
 }

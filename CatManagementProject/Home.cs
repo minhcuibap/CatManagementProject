@@ -29,5 +29,19 @@ namespace CatManagementProject
                 login.ShowDialog();
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form home = new Home();
+            home.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form catRegister = new CatRegister();
+            catRegister.ShowDialog();
+        }
     }
 }

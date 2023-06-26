@@ -1,6 +1,6 @@
 ﻿namespace CatManagementProject
 {
-    partial class Home
+    partial class CatRegister
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
+            textCatID = new TextBox();
+            textAccountID = new TextBox();
+            textBreed = new TextBox();
+            textColor = new TextBox();
+            textSex = new TextBox();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            label4 = new Label();
+            label5 = new Label();
+            RegisterButton = new Button();
+            ResetButton = new Button();
             flowLayoutPanel1 = new FlowLayoutPanel();
             panel1 = new Panel();
             panel2 = new Panel();
@@ -39,20 +50,127 @@
             button3 = new Button();
             panel5 = new Panel();
             btnLogOut = new Button();
-            sqlCommandBuilder1 = new Microsoft.Data.SqlClient.SqlCommandBuilder();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            pictureBox1 = new PictureBox();
             flowLayoutPanel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
             panel4.SuspendLayout();
             panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
+            // 
+            // textCatID
+            // 
+            textCatID.Location = new Point(563, 168);
+            textCatID.Margin = new Padding(4);
+            textCatID.Name = "textCatID";
+            textCatID.Size = new Size(576, 34);
+            textCatID.TabIndex = 0;
+            // 
+            // textAccountID
+            // 
+            textAccountID.Location = new Point(563, 238);
+            textAccountID.Margin = new Padding(4);
+            textAccountID.Name = "textAccountID";
+            textAccountID.Size = new Size(576, 34);
+            textAccountID.TabIndex = 1;
+            // 
+            // textBreed
+            // 
+            textBreed.Location = new Point(563, 307);
+            textBreed.Margin = new Padding(4);
+            textBreed.Name = "textBreed";
+            textBreed.Size = new Size(576, 34);
+            textBreed.TabIndex = 2;
+            // 
+            // textColor
+            // 
+            textColor.Location = new Point(563, 386);
+            textColor.Margin = new Padding(4);
+            textColor.Name = "textColor";
+            textColor.Size = new Size(576, 34);
+            textColor.TabIndex = 3;
+            // 
+            // textSex
+            // 
+            textSex.Location = new Point(563, 454);
+            textSex.Margin = new Padding(4);
+            textSex.Name = "textSex";
+            textSex.Size = new Size(576, 34);
+            textSex.TabIndex = 4;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(328, 171);
+            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(60, 28);
+            label1.TabIndex = 5;
+            label1.Text = "CatID";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(328, 241);
+            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(103, 28);
+            label2.TabIndex = 6;
+            label2.Text = "AccountID";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Location = new Point(328, 315);
+            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(62, 28);
+            label3.TabIndex = 7;
+            label3.Text = "Breed";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Location = new Point(330, 389);
+            label4.Margin = new Padding(4, 0, 4, 0);
+            label4.Name = "label4";
+            label4.Size = new Size(60, 28);
+            label4.TabIndex = 8;
+            label4.Text = "Color";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.Location = new Point(330, 457);
+            label5.Margin = new Padding(4, 0, 4, 0);
+            label5.Name = "label5";
+            label5.Size = new Size(42, 28);
+            label5.TabIndex = 9;
+            label5.Text = "Sex";
+            // 
+            // RegisterButton
+            // 
+            RegisterButton.Location = new Point(563, 525);
+            RegisterButton.Name = "RegisterButton";
+            RegisterButton.Size = new Size(154, 47);
+            RegisterButton.TabIndex = 10;
+            RegisterButton.Text = "Register";
+            RegisterButton.UseVisualStyleBackColor = true;
+            RegisterButton.Click += RegisterButton_Click;
+            // 
+            // ResetButton
+            // 
+            ResetButton.Location = new Point(795, 525);
+            ResetButton.Name = "ResetButton";
+            ResetButton.Size = new Size(154, 47);
+            ResetButton.TabIndex = 11;
+            ResetButton.Text = "Reset";
+            ResetButton.UseVisualStyleBackColor = true;
+            ResetButton.Click += ResetButton_Click;
             // 
             // flowLayoutPanel1
             // 
@@ -66,7 +184,7 @@
             flowLayoutPanel1.Location = new Point(0, 0);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
             flowLayoutPanel1.Size = new Size(207, 673);
-            flowLayoutPanel1.TabIndex = 0;
+            flowLayoutPanel1.TabIndex = 12;
             // 
             // panel1
             // 
@@ -133,6 +251,7 @@
             button3.TabIndex = 2;
             button3.Text = "Cat List";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // panel5
             // 
@@ -154,99 +273,52 @@
             btnLogOut.UseVisualStyleBackColor = true;
             btnLogOut.Click += btnLogOut_Click;
             // 
-            // sqlCommandBuilder1
+            // CatRegister
             // 
-            sqlCommandBuilder1.DataAdapter = null;
-            sqlCommandBuilder1.QuotePrefix = "[";
-            sqlCommandBuilder1.QuoteSuffix = "]";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(449, 47);
-            label1.Name = "label1";
-            label1.Size = new Size(346, 31);
-            label1.TabIndex = 1;
-            label1.Text = "WELCOME TO OUR PET SERVICE ";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(242, 118);
-            label2.Name = "label2";
-            label2.Size = new Size(213, 31);
-            label2.TabIndex = 2;
-            label2.Text = "Home is homepage";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(242, 189);
-            label3.Name = "label3";
-            label3.Size = new Size(293, 31);
-            label3.TabIndex = 3;
-            label3.Text = "Services to register services";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(242, 260);
-            label4.Name = "label4";
-            label4.Size = new Size(284, 31);
-            label4.TabIndex = 4;
-            label4.Text = "Cat List to show list of cats";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(242, 331);
-            label5.Name = "label5";
-            label5.Size = new Size(202, 31);
-            label5.TabIndex = 5;
-            label5.Text = "Log Out to log out";
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(654, 127);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(220, 285);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 6;
-            pictureBox1.TabStop = false;
-            // 
-            // Home
-            // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1262, 673);
-            Controls.Add(pictureBox1);
+            Controls.Add(flowLayoutPanel1);
+            Controls.Add(ResetButton);
+            Controls.Add(RegisterButton);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(flowLayoutPanel1);
-            Name = "Home";
+            Controls.Add(textSex);
+            Controls.Add(textColor);
+            Controls.Add(textBreed);
+            Controls.Add(textAccountID);
+            Controls.Add(textCatID);
+            Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            Margin = new Padding(4);
+            Name = "CatRegister";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Home";
+            Text = "CatRegister";
             flowLayoutPanel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
             panel3.ResumeLayout(false);
             panel4.ResumeLayout(false);
             panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
+        private TextBox textCatID;
+        private TextBox textAccountID;
+        private TextBox textBreed;
+        private TextBox textColor;
+        private TextBox textSex;
+        private Label label1;
+        private Label label2;
+        private Label label3;
+        private Label label4;
+        private Label label5;
+        private Button RegisterButton;
+        private Button ResetButton;
         private FlowLayoutPanel flowLayoutPanel1;
         private Panel panel1;
         private Panel panel2;
@@ -257,12 +329,5 @@
         private Button button3;
         private Panel panel5;
         private Button btnLogOut;
-        private Microsoft.Data.SqlClient.SqlCommandBuilder sqlCommandBuilder1;
-        private Label label1;
-        private Label label2;
-        private Label label3;
-        private Label label4;
-        private Label label5;
-        private PictureBox pictureBox1;
     }
 }

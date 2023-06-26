@@ -344,6 +344,7 @@
             Controls.Add(label1);
             Controls.Add(dgvRegisteredServiceList);
             Name = "RegisteredServiceList";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "RegisteredServiceList";
             ((System.ComponentModel.ISupportInitialize)dgvRegisteredServiceList).EndInit();
             panel1.ResumeLayout(false);

@@ -60,4 +60,50 @@
   <metadata name="pageSetupDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
 </root>

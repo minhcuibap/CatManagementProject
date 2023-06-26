@@ -193,6 +193,7 @@
             Controls.Add(label2);
             Controls.Add(dgvServiceList);
             Name = "ServiceList";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "StaffDashboard";
             ((System.ComponentModel.ISupportInitialize)dgvServiceList).EndInit();
             panel1.ResumeLayout(false);

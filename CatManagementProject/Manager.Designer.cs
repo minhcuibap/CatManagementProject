@@ -65,7 +65,7 @@
             btnLogOut.FlatAppearance.BorderSize = 0;
             btnLogOut.FlatStyle = FlatStyle.Flat;
             btnLogOut.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
-            btnLogOut.Location = new Point(0, 382);
+            btnLogOut.Location = new Point(0, 472);
             btnLogOut.Name = "btnLogOut";
             btnLogOut.Size = new Size(250, 79);
             btnLogOut.TabIndex = 4;
@@ -97,6 +97,7 @@
             btnCat.TabIndex = 2;
             btnCat.Text = "Cat";
             btnCat.UseVisualStyleBackColor = true;
+            btnCat.Click += btnCat_Click;
             // 
             // btnManager
             // 
@@ -141,7 +142,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(302, 297);
+            label3.Location = new Point(302, 319);
             label3.Name = "label3";
             label3.Size = new Size(287, 31);
             label3.TabIndex = 3;
@@ -151,7 +152,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(302, 222);
+            label4.Location = new Point(302, 232);
             label4.Name = "label4";
             label4.Size = new Size(239, 31);
             label4.TabIndex = 4;
@@ -161,7 +162,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(302, 371);
+            label5.Location = new Point(302, 494);
             label5.Name = "label5";
             label5.Size = new Size(202, 31);
             label5.TabIndex = 5;

@@ -8,6 +8,9 @@
     <Compile Update="BanUserForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="CatList.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="CatRegister.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -36,5 +36,12 @@ namespace CatManagementProject
             Form services = new Services();
             services.ShowDialog();
         }
+
+        private void btnCat_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form cat = new CatList();
+            cat.ShowDialog();
+        }
     }
 }

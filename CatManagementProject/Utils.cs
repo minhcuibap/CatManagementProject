@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CatManagementProject
 {
-    internal class Utils
+    public class Utils
     {
         public static bool isValidUsername(string txtUsername, string format)
         {

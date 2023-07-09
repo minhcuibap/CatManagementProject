@@ -23,13 +23,19 @@ namespace CatManagementProject
             accounts = accountHelper.GetAll();
         }
 
+        public Account checkLogin(List<Account> accounts, String username, String password)
+        {
+
+            return accounts.FirstOrDefault(a => a.Username.Equals(username) &&
+                                            a.Password.Equals(password));
+        }
+
         private void btnLogin_Click(object sender, EventArgs e)
         {
             String username = txtUsername.Text;
             String password = txtPassword.Text;
 
-            var check = accounts.Where(a => a.Username.Equals(username) &&
-                                            a.Password.Equals(password)).FirstOrDefault();
+            var check = checkLogin(accounts, username, password);
 
             if (check != null)
             {

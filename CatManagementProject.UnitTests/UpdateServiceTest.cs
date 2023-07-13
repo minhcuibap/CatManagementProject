@@ -48,7 +48,7 @@ namespace CatManagementProject.UnitTests
             var update = new UpdateService();
             var ex = Assert.Throws<ArgumentException>(() => update.findService(id));
 
-            StringAssert.Contains("No ID Found", ex.Message.ToString());
+            StringAssert.AreEqualIgnoringCase("No ID Found", ex.Message.ToString());
         }
     }
 }

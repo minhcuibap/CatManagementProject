@@ -66,12 +66,12 @@ namespace CatManagementProject
 
         private async void btnUpdate_Click(object sender, EventArgs e)
         {
-            var service = new Service();
             String idStr = txtID.Text;
             String name = txtName.Text;
             String priceStr = txtPrice.Text;
 
             int id = Convert.ToInt32(idStr);
+            Service service = findService(id);
 
             if (!checkName(name))
             {
@@ -105,6 +105,18 @@ namespace CatManagementProject
             {
                 return;
             }
+        }
+
+        public Service findService(int id)
+        {
+            Boolean result = false;
+            var list = _serviceHelper.GetAll();
+            Service service = list.FirstOrDefault(x => x.ServiceId == id);
+            if (service == null)
+            {
+                throw new ArgumentException("No ID Found");
+            }
+            return service;
         }
 
         private async void btnDelete_Click(object sender, EventArgs e)

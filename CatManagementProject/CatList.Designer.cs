@@ -38,7 +38,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(12, 9);
+            label1.Location = new Point(328, 9);
             label1.Name = "label1";
             label1.Size = new Size(129, 46);
             label1.TabIndex = 0;
@@ -57,12 +57,12 @@
             dgvCatList.ReadOnly = true;
             dgvCatList.RowHeadersWidth = 51;
             dgvCatList.RowTemplate.Height = 29;
-            dgvCatList.Size = new Size(758, 406);
+            dgvCatList.Size = new Size(758, 358);
             dgvCatList.TabIndex = 1;
             // 
             // btnBack
             // 
-            btnBack.Location = new Point(676, 470);
+            btnBack.Location = new Point(676, 498);
             btnBack.Name = "btnBack";
             btnBack.Size = new Size(94, 29);
             btnBack.TabIndex = 2;

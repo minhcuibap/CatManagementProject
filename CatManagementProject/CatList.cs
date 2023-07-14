@@ -23,9 +23,10 @@ namespace CatManagementProject
         {
             InitializeComponent();
             initCatList();
+            dgvCatList.Columns["Account"].Visible = false;
+            dgvCatList.Columns["RegisteredServices"].Visible = false;
         }
-
-        private void initCatList()
+            private void initCatList()
         {
             var listCat = _catHelper.GetAll();
             dgvCatList.DataSource = new BindingSource { DataSource = listCat };

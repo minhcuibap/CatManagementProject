@@ -11,6 +11,9 @@
     <Compile Update="CatList.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="CatListCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="CatRegister.cs">
       <SubType>Form</SubType>
     </Compile>

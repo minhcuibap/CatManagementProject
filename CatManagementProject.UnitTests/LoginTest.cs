@@ -22,6 +22,7 @@ namespace CatManagementProject.UnitTests
         new object[] {"", "345", false},
         new object[] {"", "123", false}
         };
+
         [SetUp]
         public void Setup()
         {
@@ -31,12 +32,17 @@ namespace CatManagementProject.UnitTests
         [TestCaseSource(nameof(TestData))]
         public void checkLogin_ValidUser_ReturnsWell(String username, String password, bool expected)
         {
+            // Arrange - prepare testing object
             var login = new Login();
             var accountHelper = new AccountHelper();
             var check = login.checkLogin(accountHelper.GetAll(), username, password);
 
+
+            // Act - actual work
             bool actual = check != null ? true : false;
 
+
+            // Assert - verify result
             Assert.AreEqual(expected, actual);
 
             Assert.Pass();

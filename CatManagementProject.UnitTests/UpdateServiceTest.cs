@@ -14,7 +14,7 @@ namespace CatManagementProject.UnitTests
 
         private static object[] InvalidTestData = new object[]
         {
-            new object[] { 69 },
+            new object[] { 20 },
         };
 
         [SetUp]
@@ -44,7 +44,7 @@ namespace CatManagementProject.UnitTests
         [TestCaseSource(nameof(InvalidTestData))]
         public void FindService_WithInvalidId_ReturnsException(int id)
         {
-            Boolean actual = false;
+            //Boolean actual = false;
             var update = new UpdateService();
             var ex = Assert.Throws<ArgumentException>(() => update.findService(id));
 

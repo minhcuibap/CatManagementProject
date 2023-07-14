@@ -36,7 +36,7 @@
             panel3 = new Panel();
             button2 = new Button();
             panel4 = new Panel();
-            button3 = new Button();
+            btnCatListCustomer = new Button();
             panel5 = new Panel();
             btnLogOut = new Button();
             sqlCommandBuilder1 = new Microsoft.Data.SqlClient.SqlCommandBuilder();
@@ -117,22 +117,23 @@
             // 
             // panel4
             // 
-            panel4.Controls.Add(button3);
+            panel4.Controls.Add(btnCatListCustomer);
             panel4.Location = new Point(3, 226);
             panel4.Name = "panel4";
             panel4.Size = new Size(204, 65);
             panel4.TabIndex = 3;
             // 
-            // button3
+            // btnCatListCustomer
             // 
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
-            button3.Location = new Point(-21, -4);
-            button3.Name = "button3";
-            button3.Size = new Size(254, 74);
-            button3.TabIndex = 2;
-            button3.Text = "Cat List";
-            button3.UseVisualStyleBackColor = true;
+            btnCatListCustomer.FlatStyle = FlatStyle.Flat;
+            btnCatListCustomer.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            btnCatListCustomer.Location = new Point(-21, -4);
+            btnCatListCustomer.Name = "btnCatListCustomer";
+            btnCatListCustomer.Size = new Size(254, 74);
+            btnCatListCustomer.TabIndex = 2;
+            btnCatListCustomer.Text = "Cat List";
+            btnCatListCustomer.UseVisualStyleBackColor = true;
+            btnCatListCustomer.Click += btnCatListCustomer_Click;
             // 
             // panel5
             // 
@@ -254,7 +255,7 @@
         private Panel panel3;
         private Button button2;
         private Panel panel4;
-        private Button button3;
+        private Button btnCatListCustomer;
         private Panel panel5;
         private Button btnLogOut;
         private Microsoft.Data.SqlClient.SqlCommandBuilder sqlCommandBuilder1;

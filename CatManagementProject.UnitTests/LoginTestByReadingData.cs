@@ -19,10 +19,12 @@ namespace CatManagementProject.UnitTests
             var accountHelper = new AccountHelper();
         }
 
-        private static IEnumerable<String[]> GetTestData()
+        private static IEnumerable<String[]> GetTestData(string path)
         {
-            using (var reader = new StreamReader("test_data.txt"))
+            using (var reader = new StreamReader(path))
             {
+                reader.ReadLine();
+
                 while (!reader.EndOfStream)
                 {
                     var line = reader.ReadLine();
@@ -33,7 +35,7 @@ namespace CatManagementProject.UnitTests
         }
 
         [Test]
-        [TestCaseSource(nameof(GetTestData))]
+        [TestCaseSource(nameof(GetTestData), new object[] {"test_data.txt"})]
         public void checkLogin_GivenRightInput_ReturnsWell(String username, String password, String expectedResult)
         {
             bool expectedValue = bool.Parse(expectedResult);

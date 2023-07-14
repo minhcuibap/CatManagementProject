@@ -43,5 +43,12 @@ namespace CatManagementProject
             Form catRegister = new CatRegister();
             catRegister.ShowDialog();
         }
+
+        private void btnCatListCustomer_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form catListCustomer = new CatListCustomer();
+            catListCustomer.ShowDialog();
+        }
     }
 }

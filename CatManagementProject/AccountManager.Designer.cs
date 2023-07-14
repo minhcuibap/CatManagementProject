@@ -56,20 +56,21 @@
             dgvUser.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             dgvUser.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvUser.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvUser.Location = new Point(288, 3);
+            dgvUser.Location = new Point(267, 13);
             dgvUser.Margin = new Padding(3, 4, 3, 4);
             dgvUser.Name = "dgvUser";
             dgvUser.ReadOnly = true;
             dgvUser.RowHeadersWidth = 51;
             dgvUser.RowTemplate.Height = 25;
-            dgvUser.Size = new Size(962, 263);
+            dgvUser.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvUser.Size = new Size(983, 263);
             dgvUser.TabIndex = 0;
             dgvUser.CellDoubleClick += dgvUser_CellDoubleClick;
             // 
             // cbFilterBy
             // 
             cbFilterBy.FormattingEnabled = true;
-            cbFilterBy.Location = new Point(326, 317);
+            cbFilterBy.Location = new Point(305, 327);
             cbFilterBy.Name = "cbFilterBy";
             cbFilterBy.Size = new Size(151, 28);
             cbFilterBy.TabIndex = 1;
@@ -78,7 +79,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(398, 289);
+            label1.Location = new Point(377, 299);
             label1.Name = "label1";
             label1.Size = new Size(79, 25);
             label1.TabIndex = 2;
@@ -86,7 +87,7 @@
             // 
             // btnFilter
             // 
-            btnFilter.Location = new Point(398, 369);
+            btnFilter.Location = new Point(377, 379);
             btnFilter.Name = "btnFilter";
             btnFilter.Size = new Size(79, 29);
             btnFilter.TabIndex = 3;
@@ -96,14 +97,14 @@
             // 
             // txtAccountID
             // 
-            txtAccountID.Location = new Point(516, 317);
+            txtAccountID.Location = new Point(495, 327);
             txtAccountID.Name = "txtAccountID";
             txtAccountID.Size = new Size(125, 27);
             txtAccountID.TabIndex = 4;
             // 
             // txtUsername
             // 
-            txtUsername.Location = new Point(686, 317);
+            txtUsername.Location = new Point(665, 327);
             txtUsername.Name = "txtUsername";
             txtUsername.Size = new Size(125, 27);
             txtUsername.TabIndex = 5;
@@ -112,7 +113,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(542, 289);
+            label2.Location = new Point(521, 299);
             label2.Name = "label2";
             label2.Size = new Size(99, 25);
             label2.TabIndex = 6;
@@ -122,7 +123,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(714, 289);
+            label3.Location = new Point(693, 299);
             label3.Name = "label3";
             label3.Size = new Size(97, 25);
             label3.TabIndex = 7;
@@ -130,7 +131,7 @@
             // 
             // btnUpdateStatus
             // 
-            btnUpdateStatus.Location = new Point(840, 369);
+            btnUpdateStatus.Location = new Point(819, 379);
             btnUpdateStatus.Name = "btnUpdateStatus";
             btnUpdateStatus.Size = new Size(125, 29);
             btnUpdateStatus.TabIndex = 8;
@@ -140,7 +141,7 @@
             // 
             // txtStatus
             // 
-            txtStatus.Location = new Point(840, 317);
+            txtStatus.Location = new Point(819, 327);
             txtStatus.Name = "txtStatus";
             txtStatus.Size = new Size(125, 27);
             txtStatus.TabIndex = 9;
@@ -149,7 +150,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(903, 289);
+            label4.Location = new Point(882, 299);
             label4.Name = "label4";
             label4.Size = new Size(62, 25);
             label4.TabIndex = 10;
@@ -158,7 +159,7 @@
             // btnReset
             // 
             btnReset.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            btnReset.Location = new Point(577, 452);
+            btnReset.Location = new Point(556, 462);
             btnReset.Name = "btnReset";
             btnReset.Size = new Size(162, 64);
             btnReset.TabIndex = 11;

@@ -105,7 +105,7 @@ namespace CatManagementProject
 
                 if (status.Equals("Inactive"))
                 {
-                    DialogResult result = MessageBox.Show("Do you want to reactive the account " + username + "?", "Attention", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    DialogResult result = MessageBox.Show("Do you want to reactivate the account " + username + "?", "Attention", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (result == DialogResult.Yes)
                     {
                         var updateAccount = AccountList.FirstOrDefault(account => account.AccountId == accountID);
@@ -125,7 +125,7 @@ namespace CatManagementProject
                 }
                 else
                 {
-                    DialogResult result = MessageBox.Show("Do you want to deactive the account " + username + "?", "Attention", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    DialogResult result = MessageBox.Show("Do you want to deactivate the account " + username + "?", "Attention", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (result == DialogResult.Yes)
                     {
                         var updateAccount = AccountList.FirstOrDefault(account => account.AccountId == accountID);
